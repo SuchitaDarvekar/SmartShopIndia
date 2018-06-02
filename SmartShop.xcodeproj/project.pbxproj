@@ -14,6 +14,16 @@
 		E98806D320C2645F00F8074A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E98806D220C2645F00F8074A /* Assets.xcassets */; };
 		E98806D620C2645F00F8074A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98806D420C2645F00F8074A /* LaunchScreen.storyboard */; };
 		E98806E020C2677400F8074A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98806DF20C2677400F8074A /* RootViewController.swift */; };
+		E98806E520C2691C00F8074A /* Pager.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98806E420C2691C00F8074A /* Pager.storyboard */; };
+		E98806E720C2695800F8074A /* PageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98806E620C2695700F8074A /* PageViewController.swift */; };
+		E98806E920C26A1C00F8074A /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98806E820C26A1C00F8074A /* FirstViewController.swift */; };
+		E98806EB20C26A2C00F8074A /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98806EA20C26A2C00F8074A /* SecondViewController.swift */; };
+		E98806ED20C26A4000F8074A /* LastViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98806EC20C26A4000F8074A /* LastViewController.swift */; };
+		E98806F020C26EE700F8074A /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98806EF20C26EE700F8074A /* Constants.swift */; };
+		E98806F220C26F7100F8074A /* Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98806F120C26F7100F8074A /* Extension.swift */; };
+		E98806F420C2703F00F8074A /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98806F320C2703F00F8074A /* Utility.swift */; };
+		E98806F720C28FA700F8074A /* PageControlView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98806F620C28FA700F8074A /* PageControlView.swift */; };
+		E98806F920C28FC500F8074A /* PageControlView.xib in Resources */ = {isa = PBXBuildFile; fileRef = E98806F820C28FC500F8074A /* PageControlView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +36,16 @@
 		E98806D520C2645F00F8074A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E98806D720C2645F00F8074A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E98806DF20C2677400F8074A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		E98806E420C2691C00F8074A /* Pager.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Pager.storyboard; sourceTree = "<group>"; };
+		E98806E620C2695700F8074A /* PageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageViewController.swift; sourceTree = "<group>"; };
+		E98806E820C26A1C00F8074A /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
+		E98806EA20C26A2C00F8074A /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		E98806EC20C26A4000F8074A /* LastViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LastViewController.swift; sourceTree = "<group>"; };
+		E98806EF20C26EE700F8074A /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		E98806F120C26F7100F8074A /* Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extension.swift; sourceTree = "<group>"; };
+		E98806F320C2703F00F8074A /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
+		E98806F620C28FA700F8074A /* PageControlView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageControlView.swift; sourceTree = "<group>"; };
+		E98806F820C28FC500F8074A /* PageControlView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PageControlView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +78,8 @@
 		E98806C720C2645F00F8074A /* SmartShop */ = {
 			isa = PBXGroup;
 			children = (
+				E98806F520C28F7700F8074A /* Views */,
+				E98806EE20C26ECD00F8074A /* Utility */,
 				E98806DE20C2673200F8074A /* StoryBoard */,
 				E98806DD20C2671D00F8074A /* ViewControllers */,
 				E98806C820C2645F00F8074A /* AppDelegate.swift */,
@@ -83,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				E98806CC20C2645F00F8074A /* Main.storyboard */,
+				E98806E420C2691C00F8074A /* Pager.storyboard */,
 			);
 			path = StoryBoard;
 			sourceTree = "<group>";
@@ -90,8 +113,31 @@
 		E98806E120C2679300F8074A /* PagerViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E98806E620C2695700F8074A /* PageViewController.swift */,
+				E98806E820C26A1C00F8074A /* FirstViewController.swift */,
+				E98806EA20C26A2C00F8074A /* SecondViewController.swift */,
+				E98806EC20C26A4000F8074A /* LastViewController.swift */,
 			);
 			path = PagerViewController;
+			sourceTree = "<group>";
+		};
+		E98806EE20C26ECD00F8074A /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				E98806EF20C26EE700F8074A /* Constants.swift */,
+				E98806F120C26F7100F8074A /* Extension.swift */,
+				E98806F320C2703F00F8074A /* Utility.swift */,
+			);
+			path = Utility;
+			sourceTree = "<group>";
+		};
+		E98806F520C28F7700F8074A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E98806F620C28FA700F8074A /* PageControlView.swift */,
+				E98806F820C28FC500F8074A /* PageControlView.xib */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +200,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				E98806D620C2645F00F8074A /* LaunchScreen.storyboard in Resources */,
+				E98806F920C28FC500F8074A /* PageControlView.xib in Resources */,
 				E98806D320C2645F00F8074A /* Assets.xcassets in Resources */,
+				E98806E520C2691C00F8074A /* Pager.storyboard in Resources */,
 				E98806CE20C2645F00F8074A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -167,9 +215,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				E98806CB20C2645F00F8074A /* ViewController.swift in Sources */,
+				E98806E720C2695800F8074A /* PageViewController.swift in Sources */,
 				E98806D120C2645F00F8074A /* SmartShop.xcdatamodeld in Sources */,
+				E98806F420C2703F00F8074A /* Utility.swift in Sources */,
+				E98806E920C26A1C00F8074A /* FirstViewController.swift in Sources */,
+				E98806F720C28FA700F8074A /* PageControlView.swift in Sources */,
+				E98806EB20C26A2C00F8074A /* SecondViewController.swift in Sources */,
+				E98806F220C26F7100F8074A /* Extension.swift in Sources */,
 				E98806E020C2677400F8074A /* RootViewController.swift in Sources */,
+				E98806ED20C26A4000F8074A /* LastViewController.swift in Sources */,
 				E98806C920C2645F00F8074A /* AppDelegate.swift in Sources */,
+				E98806F020C26EE700F8074A /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

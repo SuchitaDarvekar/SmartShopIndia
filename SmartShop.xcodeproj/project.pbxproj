@@ -13,6 +13,7 @@
 		E98806D120C2645F00F8074A /* SmartShop.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E98806CF20C2645F00F8074A /* SmartShop.xcdatamodeld */; };
 		E98806D320C2645F00F8074A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E98806D220C2645F00F8074A /* Assets.xcassets */; };
 		E98806D620C2645F00F8074A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E98806D420C2645F00F8074A /* LaunchScreen.storyboard */; };
+		E98806E020C2677400F8074A /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E98806DF20C2677400F8074A /* RootViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		E98806D220C2645F00F8074A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E98806D520C2645F00F8074A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E98806D720C2645F00F8074A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E98806DF20C2677400F8074A /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,40 @@
 		E98806C720C2645F00F8074A /* SmartShop */ = {
 			isa = PBXGroup;
 			children = (
+				E98806DE20C2673200F8074A /* StoryBoard */,
+				E98806DD20C2671D00F8074A /* ViewControllers */,
 				E98806C820C2645F00F8074A /* AppDelegate.swift */,
 				E98806CA20C2645F00F8074A /* ViewController.swift */,
-				E98806CC20C2645F00F8074A /* Main.storyboard */,
 				E98806D220C2645F00F8074A /* Assets.xcassets */,
 				E98806D420C2645F00F8074A /* LaunchScreen.storyboard */,
 				E98806D720C2645F00F8074A /* Info.plist */,
 				E98806CF20C2645F00F8074A /* SmartShop.xcdatamodeld */,
 			);
 			path = SmartShop;
+			sourceTree = "<group>";
+		};
+		E98806DD20C2671D00F8074A /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E98806DF20C2677400F8074A /* RootViewController.swift */,
+				E98806E120C2679300F8074A /* PagerViewController */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E98806DE20C2673200F8074A /* StoryBoard */ = {
+			isa = PBXGroup;
+			children = (
+				E98806CC20C2645F00F8074A /* Main.storyboard */,
+			);
+			path = StoryBoard;
+			sourceTree = "<group>";
+		};
+		E98806E120C2679300F8074A /* PagerViewController */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = PagerViewController;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -141,6 +168,7 @@
 			files = (
 				E98806CB20C2645F00F8074A /* ViewController.swift in Sources */,
 				E98806D120C2645F00F8074A /* SmartShop.xcdatamodeld in Sources */,
+				E98806E020C2677400F8074A /* RootViewController.swift in Sources */,
 				E98806C920C2645F00F8074A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
